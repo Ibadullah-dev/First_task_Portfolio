@@ -167,12 +167,20 @@ class _HomeTab extends StatelessWidget {
                     shape: BoxShape.circle,
                     gradient: AppColors.primaryGradient,
                   ),
-                  child: const Center(
-                    child: Text(
-                      'IU',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
+                  child: ClipOval(
+                    child: Image.asset(
+                      'asset/images/image.jpeg',
+                      width: 48,
+                      height: 48,
+                      fit: BoxFit.cover,
+                      errorBuilder: (context, error, stackTrace) => const Center(
+                        child: Text(
+                          'IU',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     ),
                   ),
@@ -203,7 +211,7 @@ class _HomeTab extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
                   Text(
-                    'I\'m a 7th semester BS Software Engineering student at Abasyn University Peshawar. I build production-grade Flutter apps and integrate AI/ML capabilities into mobile experiences.',
+                    'I\'m a 8th semester BS Software Engineering student at Abasyn University Peshawar. I build production-grade Flutter apps and integrate AI/ML capabilities into mobile experiences.',
                     style: TextStyle(
                       fontSize: 13,
                       color: AppColors.textSecondary,
@@ -221,7 +229,7 @@ class _HomeTab extends StatelessWidget {
                 Expanded(
                   child: _StatCard(
                     label: 'Projects',
-                    value: '5+',
+                    value: '10+',
                     icon: Icons.folder_rounded,
                     color: AppColors.primary,
                   ),
@@ -239,7 +247,7 @@ class _HomeTab extends StatelessWidget {
                 Expanded(
                   child: _StatCard(
                     label: 'Semester',
-                    value: '7th',
+                    value: '8th',
                     icon: Icons.school_rounded,
                     color: AppColors.accent,
                   ),

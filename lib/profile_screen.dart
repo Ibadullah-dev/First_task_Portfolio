@@ -116,14 +116,14 @@ class _ProfileScreenState extends State<ProfileScreen>
                                   ),
                                 ],
                               ),
-                              child: const Center(
-                                child: Text(
-                                  'IU',
-                                  style: TextStyle(
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
+                              child: ClipOval(
+                                child: Image.asset(
+                                  'asset/images/image.jpeg',
+                                  width: 72,
+                                  height: 72,
+                                  fit: BoxFit.cover,
+                                
+                          
                                 ),
                               ),
                             ),
@@ -163,7 +163,7 @@ class _ProfileScreenState extends State<ProfileScreen>
                         Row(
                           children: [
                             _InfoChip(
-                                Icons.school_rounded, '7th Semester', AppColors.primary),
+                                Icons.school_rounded, '8th Semester', AppColors.primary),
                             const SizedBox(width: 8),
                             _InfoChip(
                                 Icons.location_on_rounded, 'Peshawar, PK', AppColors.secondary),
